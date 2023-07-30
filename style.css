@@ -1,0 +1,683 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'), url("/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fontsroboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "robotoregular", Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "robotoregular", Arial, Helvetica, sans-serif;
+}
+h1, h3, h5 {
+	font-family: 'robotobold';
+}
+a{
+	color: #000;
+	font-family: 'robotoregular';
+	font-weight: 400;
+    font-style: normal
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "robotoregular", Arial;
+	font-weight: 500;
+	color: #6b6768;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	max-width:1200px;
+	margin: 0 auto;
+}
+.button {
+	padding: 16px 53px;
+    font-size: 18px;
+    color: #fff;
+    background: #f50057;
+    border-radius: 30px;
+    font-weight: 500;
+	transition: .8s;
+	cursor: pointer;
+}
+.button:hover {
+	background: #3f3d56;
+}
+header {
+	width: 100%;
+	background: #fff;
+	height: 90px;
+	box-shadow: 0 2px 10px rgb(237 237 237);
+    border-radius: 100px;
+	position: fixed;
+	z-index: 5;
+}
+header .wrapper {
+	display: flex;
+	padding: 30px;
+	align-items: center;
+}
+header .wrapper div.left {
+	width: 45%;
+}
+header .wrapper div.left h1 {
+	width: 300px;
+	display: block;
+}
+header .wrapper div.left h1 a {
+	width: 100%;
+	font-size: 32px;
+	font-family: 'robotobold';
+	display: flex;
+	transition: color .5s;
+}
+header .wrapper div.left h1 a:hover {
+	color: #f50057;
+}
+header .wrapper div.left h1 a img {
+	display: block;
+	width: 100%;
+	max-width: 80px;
+	padding-right: 10px;
+}
+header .wrapper nav {
+	width: 55%;
+}
+header .wrapper nav div.right {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+header .wrapper nav div.right ul {
+	display: flex;
+	align-items: center;
+}
+header .wrapper nav div.right ul li {
+	display: flex;
+	margin-right: 28px;
+}
+header .wrapper nav div.right ul li a {
+	transition: color .5s;
+}
+header .wrapper nav div.right ul li a:hover {
+	color: #f50057;
+}
+header .wrapper nav div.right ul li a.home_nav_a {
+	color: #f50057;
+}
+header .wrapper nav div.right ul li:last-child {
+	margin-right: 0;
+}
+header .wrapper nav div.right ul li a.button {
+	padding: 12px 30px;
+	font-size: 16px;
+}
+header .wrapper nav div.right ul li i {
+	padding-left: 3px;
+}
+header .wrapper nav div.right ul li i.moon {
+	font-size: 26px;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+}
+#spotlight {
+	height: 50rem;
+	background: url(images/banner\ \(1\).png);
+	background-position: 0 -95px;
+	background-size: contain;
+}
+#spotlight .wrapper {
+	display: flex;
+	
+}
+#spotlight .wrapper div.left {
+	width: 50%;
+	padding-left: 18px;
+	padding-top: 180px;
+}
+#spotlight .wrapper div.left h1 {
+	font-size: 53px;
+	max-width: 90%;
+	margin-bottom: 70px;
+}
+#spotlight .wrapper div.right {
+	width: 50%;
+	padding-top: 100px;
+}
+#spotlight .wrapper div.right img {
+	display: block;
+	width: 100%;
+}
+#courses {
+	height: 49rem;
+}
+#courses div.top {
+	height: 8rem;
+	text-align: center;
+	width: 100%;
+}
+#courses div.top h3 {
+	font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#courses div.top p {
+	max-width: 55%;
+	display: flex;
+	margin: 10px auto;
+}
+#courses div.bottom {
+	height: 37rem;
+}
+#courses div.bottom ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 50px;
+}
+#courses div.bottom ul li {
+	width: 100%;
+	max-width: 30.3333333333%;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	background: #fbfbfb;
+	display: flex;
+	height: 11rem;
+	align-items: center;
+	margin-right: 30px;
+	transition: .5s;
+	
+}
+#courses div.bottom ul li:nth-child(3n) {
+	margin-right: 0;
+}
+#courses div.bottom ul li:nth-child(4) {
+	margin-top: 25px;
+}
+#courses div.bottom ul li:nth-child(5) {
+	margin-top: 25px;
+}
+#courses div.bottom ul li:nth-child(6) {
+	margin-top: 25px;
+}
+#courses div.bottom ul li:nth-child(7) {
+	margin-top: 25px;
+}
+#courses div.bottom ul li:nth-child(8) {
+	margin-top: 25px;
+}
+#courses div.bottom ul li:nth-child(9) {
+	margin-top: 25px;
+}
+#courses div.bottom ul li:nth-child(2) {
+	background: #fff;
+}
+#courses div.bottom ul li div.left {
+	width: 30%;
+	padding: 2rem 1rem;
+}
+#courses div.bottom ul li div.left img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+#courses div.bottom ul li div.right {
+	padding: 2rem 1rem;
+}
+#courses div.bottom ul li div.right span {
+	font-size: 16px;
+	font-weight: 600;
+    color: #f50057;
+	font-family: 'robotomedium';
+}
+#courses div.bottom ul li div.right h4 {
+	font-family: 'robotomedium';
+	font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+	margin-top: 5px;
+	transition: color .3s;
+}
+#courses div.bottom ul li div.right p {
+	padding-top: 10px;
+}
+#courses div.bottom ul li:hover a h4 {
+	color: #f50057;
+}
+#courses div.bottom ul li:hover {
+	box-shadow: 0 2px 10px rgb(196, 196, 196);
+}
+#about {
+	height: 40rem;
+	background: url(images/middle.png);
+	margin-top: 100px;
+	width: 100%;
+	background-size: cover;
+	background-color: #fff;
+}
+#about .wrapper {
+	display: flex;
+}
+#about .wrapper div.left {
+	width: 50%;
+}
+#about .wrapper div.left div.img_container {
+	width: 100%;
+	max-width: 88%;
+	display: block;
+}
+#about .wrapper div.left div.img_container img {
+	width: 100%;
+	border-radius: 10px;
+}
+#about .wrapper div.right {
+	width: 50%;
+	margin-top: 30px;
+}
+#about .wrapper div.right h5 {
+	font-size: 1rem;
+	font-family: 'robotoregular';
+	font-weight: 400;
+}
+#about .wrapper div.right h3 {
+	font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+	padding-top: 8px;
+	max-width: 80%;
+}
+#about .wrapper div.right p {
+	width: 90%;
+	padding-top: 15px;
+}
+#about .wrapper div.right ul {
+	display: flex;
+	padding-top: 30px;
+}
+#about .wrapper div.right ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+#about .wrapper div.right ul li span {
+	max-width: 50%;
+	line-height: 28px;
+	margin-bottom: 6px;
+	margin-left: 1rem;
+}
+#about .wrapper div.right a.button {
+	background: #3f3d56;
+	display: inline-block;
+	padding: 12px 45px;
+	transition: .5s ease-out;
+}
+#about .wrapper div.right a.button:hover {
+	background: #f50057;
+}
+#teachers {
+	height: 40rem;
+	padding-top: 70px;
+	text-align: center;
+}
+#teachers div.top {
+	height: 8rem;
+}
+#teachers div.top h3 {
+	font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#teachers div.top p {
+	width: 55%;
+	margin: 0.5rem auto !important;
+}
+#teachers div.bottom {
+	height: 32rem;
+}
+#teachers div.bottom ul {
+	display: flex;
+	margin-top: 45px;
+}
+#teachers div.bottom ul li {
+	width: 25%;
+	padding-right: 25px;
+	max-height: 10rem;
+}
+#teachers div.bottom ul li:last-child {
+	padding-right: 0;
+}
+#teachers div.bottom ul li a.img_a {
+	width: 100%;
+	display: block;
+	transition: .5s all;
+	max-width: 100%;
+}
+#teachers div.bottom ul li a.img_a img {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+	transition: .5s all;
+	height: 17rem;
+}
+#teachers div.bottom ul li a.img_a img:hover {
+	transform: translateY(-5px);
+    box-shadow: 0px 17px 26px -16px rgba(0, 0, 0, 0.41);
+}
+#teachers div.bottom ul li a h3 {
+	font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+	font-family: 'robotomedium';
+	padding-top: 20px;
+	transition: color 0.5s;
+}
+#teachers div.bottom ul li a h3:hover {
+	color: #f50057;
+}
+#teachers div.bottom ul li span {
+	font-size: 15px;
+    line-height: 20px;
+    margin: 2px 0 20px;
+	color: #6b6768;
+}
+#testimonials {
+	height: 30rem;
+	background: #fbfbfb;
+	margin-top: 50px;
+	text-align: center;
+}
+#testimonials div.top {
+	height: 8rem;
+	padding-top: 70px;
+}
+#testimonials div.top h3 {
+	font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#testimonials div.bottom {
+	height: 22rem;
+}
+#testimonials div.bottom img {
+	margin-top: 40px;
+	border-radius: 50%;
+	max-width: 100%;
+}
+#testimonials div.bottom h5 {
+	font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+#testimonials div.bottom span {
+	color: #f50057;
+    font-size: 14px;
+}
+#testimonials div.bottom p {
+	font-size: 20px;
+    line-height: 30px;
+	max-width: 70%;
+	margin: 18px auto;
+}
+#testimonials div.bottom button {
+	display: inline-block;
+}
+#testimonials div.bottom button span {
+	width: 12px;
+	height: 12px;
+	background: #f50057;
+	margin: 5px 5px;
+	opacity: 1;
+	display: block;
+	border-radius: 30px;
+	transition: .5s;
+}
+#testimonials div.bottom button span:hover {
+	background: #9d9d9d;
+	cursor: pointer;
+}
+#article {
+	height: 60rem;
+	margin-top: 80px;
+	text-align: center;
+}
+#article section.top {
+	height: 8rem;
+}
+#article section.top h3 {
+	font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#article section.top p {
+	max-width: 55%;
+	margin: auto;
+	margin-top: 10px;
+}
+#article section.cards {
+	height: 32rem;
+}
+#article section.cards ul {
+	display: flex;
+	margin-top: 50px;
+}
+#article section.cards ul li {
+	width: 33.3333333333%;
+	height: 32rem;
+	margin-right: 30px;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	transition: .3s;
+}
+#article section.cards ul li:hover {
+	transform: translateY(-5px);
+    box-shadow: 0px 17px 26px -16px rgba(0, 0, 0, 0.41);
+}
+#article section.cards ul li:hover div.bottom h3 {
+	color: #f50057;
+}
+#article section.cards ul li div.top {
+	width: 100%;
+	display: block;
+	height: 16rem;
+}
+#article section.cards ul li div.top img {
+	width: 100%;
+	display: block;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#article section.cards ul li div.bottom {
+	height: 16rem;
+	text-align: left;
+	padding: 30px;
+}
+#article section.cards ul li div.bottom span {
+	font-size: 14px;
+    color: #6b6768;
+    line-height: 12px;
+}
+#article section.cards ul li div.bottom h3 {
+	color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+	max-width: 80%;
+	transition: color .3s;
+}
+#article section.cards ul li div.bottom p {
+	padding-top: 10px;
+	line-height: 28px;
+}
+#article section.bottom {
+	height: 16rem;
+	background: antiquewhite;
+	max-width: 700px;
+	background: url(images/banner\ \(1\).png);
+	background-color: #fbfbfb;
+	box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
+	background-size: cover;
+	position: relative;
+	left: 20%;
+	right: auto;
+	top: 120px;
+	border-radius: 10px;
+}
+#article section.bottom h3 {
+	font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+	padding-top: 1.33em;
+	margin-bottom: 50px;
+}
+footer {
+	height: 32rem;
+}
+footer section.top {
+	height: 28rem;
+	background: #060e1f;
+	padding-top: 13%;
+}
+footer section.top .wrapper {
+	display: flex;
+}
+footer section.top .wrapper div.large {
+	width: 30% !important;
+}
+footer section.top .wrapper div.item {
+	width: 20%;
+	margin-right: 50px;
+}
+footer section.top .wrapper div.item h5 {
+	color: #eee;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(23, 54, 88, 0.4);
+    padding-bottom: 10px;
+	font-family: 'robotoregular';
+}
+footer section.top .wrapper div.large p {
+	font-size: 14px;
+    line-height: 24px;
+    color: #cecece;
+}
+footer section.top .wrapper div.first ul {
+	display: flex;
+	margin-top: 30px;
+}
+footer section.top .wrapper div.first ul li {
+	margin-right: 20px;
+	color: #fff;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.06);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+	display: inline-block;
+}
+footer section.top .wrapper div.first ul li a span i {
+	color: #fff;
+	padding-top: 10px;
+}
+footer section.top .wrapper div.item ul li a {
+	font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #cecece;
+    margin: 0 0 10px 0;
+    display: block;
+}
+footer section.bottom {
+	height: 4rem;
+	background: #040a17;
+}
+footer section.bottom span {
+	font-size: 15px;
+    line-height: 20px;
+    color: #a0a0a0;
+	margin-top: 20px;
+}
+footer section.bottom .wrapper {
+	display: flex;
+	justify-content: center;
+}
+footer section.bottom span a {
+	color: #fff;
+}
+footer section.bottom span a:hover {
+	text-decoration: underline;
+}
